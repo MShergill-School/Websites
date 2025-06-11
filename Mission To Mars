@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mission to Mars</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #0b0c10;
+      color: #fff;
+      overflow: hidden;
+    }
+    body.loaded {
+      overflow: auto;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0b0c10cc;
+      padding: 1rem;
+      z-index: 1000;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    nav a {
+      color: #66fcf1;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #ffffff;
+      outline: none;
+    }
+    header, section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 3rem 4rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+      text-shadow: 0 0 6px rgba(0,0,0,0.8);
+    }
+    header.visible, section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    header {
+      background: linear-gradient(45deg, #1f2833, #45a29e);
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 7rem;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #b4f1f1;
+    }
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1.2rem;
+      text-shadow: 0 0 12px #45a29e;
+    }
+    p {
+      max-width: 700px;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      background: rgba(11, 12, 16, 0.75);
+      padding: 1.3rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .sources {
+      font-size: 1rem;
+      font-style: italic;
+      max-width: 700px;
+      background: rgba(11, 12, 16, 0.5);
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      color: #8cd6d6;
+      box-shadow: 0 0 6px rgba(11, 18, 18, 0.9);
+      margin-top: -1rem;
+      margin-bottom: 4rem;
+      line-height: 1.4;
+    }
+    .sources a {
+      color: #66fcf1;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+    .sources a:hover,
+    .sources a:focus {
+      color: #a0f7f7;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Mars</a>
+  <a href="#food">Food</a>
+  <a href="#oxygen">Oxygen</a>
+  <a href="#energy">Energy</a>
+  <a href="#recycling">Recycling</a>
+</nav>
+
+<header id="home" class="visible">
+  <h1>Mission to Mars</h1>
+  <p>Creating a self-sustaining colony for humanity's future</p>
+</header>
+
+<section id="about" style="background-image: url('https://wallpaperaccess.com/full/538241.jpg');">
+  <h2>About Mars</h2>
+  <p>
+    Mars, the fourth planet from the Sun, is known for its cold and dry environment with a thin atmosphere made mostly of carbon dioxide (about 95%).  
+    Average surface temperatures hover around -63°C, with lows reaching -125°C near the poles in winter. Atmospheric pressure is less than 1% of Earth's, which makes breathing without a suit impossible.  
+    Mars also experiences high levels of cosmic radiation due to its weak magnetic field and thin atmosphere. Its gravity is about 38% of Earth's, which may impact human health over time, causing muscle and bone loss.  
+    These harsh conditions require advanced technology and habitat designs to protect and sustain human life.
+  </p>
+  <div class="sources">
+    Sources: <a href="https://mars.nasa.gov/mars-exploration/" target="_blank" rel="noopener noreferrer">NASA. (2023). Mars exploration overview.</a>
+  </div>
+</section>
+
+<section id="food" style="background-image: url('https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2020/07/13031617/4K-Mars-body-image-3.png');">
+  <h2>Food Production</h2>
+  <p>
+    Growing food on Mars relies heavily on hydroponics — growing plants in nutrient-rich water without soil — and artificial lighting. NASA experiments have successfully grown crops like lettuce, wheat, soybeans, and potatoes in controlled environments.  
+    LED lights simulate sunlight with specific wavelengths optimized for photosynthesis. Closed systems recycle water and nutrients to minimize waste. Since Martian soil lacks organic material and contains toxic perchlorates, soil simulants mixed with cleaned regolith or hydroponic setups will be necessary.  
+    Low gravity and radiation present challenges for plant growth and development that scientists continue to study using space stations and analog Mars habitats.
+  </p>
+  <p>
+    Advanced greenhouses may use automated sensors and AI to monitor plant health and adjust lighting, humidity, and nutrients, ensuring reliable food supplies for colonists.
+  </p>
+  <div class="sources">
+    Sources: <a href="https://www.nasa.gov/feature/nasa-plant-researchers-explore-question-of-deep-space-food-crops" target="_blank" rel="noopener noreferrer">NASA. (2014). NASA plant researchers explore question of deep‑space food crops.</a>
+  </div>
+</section>
+
+<section id="oxygen" style="background-image: url('https://media.cnn.com/api/v1/images/stellar/prod/230907114352-01-nasa-mars-moxie.jpg?q=w_1110,c_fill');">
+  <h2>Oxygen Systems</h2>
+  <p>
+    The MOXIE (Mars Oxygen In-Situ Resource Utilization Experiment) onboard the Perseverance rover is a pioneering technology that extracts oxygen from Mars’ carbon dioxide-rich atmosphere.  
+    It uses a process called solid oxide electrolysis, which heats CO₂ to about 800°C and passes it through a ceramic membrane. This reaction splits CO₂ into oxygen (O₂) and carbon monoxide (CO).  
+    MOXIE currently produces roughly 10 grams of oxygen per hour, enough for a small spacewalk. Future scaled-up versions will need to produce kilograms per day to support human life and rocket fuel production.  
+    This technology is critical because carrying oxygen from Earth is impractical due to weight and cost.
+  </p>
+  <p>
+    Backup life support systems might include biological solutions like algae-based bioreactors, where photosynthetic organisms generate oxygen and recycle carbon dioxide, creating a sustainable air supply within habitats.
+  </p>
+  <div class="sources">
+    Sources: <a href="https://www.nasa.gov/mission_pages/mars/main/index.html" target="_blank" rel="noopener noreferrer">NASA. (2023). MOXIE: Mars oxygen production experiment.</a>
+  </div>
+</section>
+
+<section id="energy" style="background-image: url('https://www.nasa.gov/wp-content/uploads/2021/05/kilopower_moon_render_1_1.jpg?w=1041');">
+  <h2>Energy Sources</h2>
+  <p>
+    Solar energy is a primary power source but faces challenges on Mars due to its weaker sunlight (about 43% of Earth’s intensity) and frequent global dust storms that block sunlight for weeks.  
+    Solar panels must be cleaned regularly to maintain efficiency, requiring robotic or manual systems.  
+    To provide consistent, reliable power, NASA is developing compact nuclear reactors like Kilopower.  
+    Kilopower reactors generate steady electrical power (around 10 kW) by converting heat from nuclear fission into electricity using Stirling engines. This energy can power habitats, life support, and scientific equipment regardless of weather conditions.
+  </p>
+  <p>
+    Nuclear power offers a high energy density and reliability, critical for long-duration missions and Mars' harsh environment.
+  </p>
+  <div class="sources">
+    Sources: <a href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/Mars" target="_blank" rel="noopener noreferrer">European Space Agency. (2023). Mars exploration: energy solutions.</a>
+  </div>
+</section>
+
+<section id="recycling" style="background-image: url('https://www.usbr.gov/newsroom/newsroom/newsroom/2023-09/B00-300-2333.jpeg');">
+  <h2>Water & Waste Recycling</h2>
+  <p>
+    Water is a precious resource on Mars, so recycling is essential. NASA proposes closed-loop water systems that reclaim over 90% of water from astronaut sweat, urine, and humidity.  
+    These systems use condensation recovery, filtration, and chemical treatment to purify water for reuse, greatly reducing the need for resupply from Earth.  
+    Wastewater is processed through biological and chemical reactors to break down contaminants safely.  
+    Urine treatment involves distillation and microbial bioreactors to recover water and nutrients while preventing pathogen growth.
+  </p>
+  <p>
+    Such recycling not only conserves water but also supports nutrient cycling in hydroponic farms, closing the loop on life support systems necessary for sustainable Mars colonies.
+  </p>
+  <div class="sources">
+    Sources: <a href="https://ntrs.nasa.gov/citations/20160001260" target="_blank" rel="noopener noreferrer">Jones, H. W., Hodgson, E. W., & Kliss, M. H. (2015). Water system architectures for Moon and Mars bases.</a>
+  </div>
+</section>
+
+<script>
+  const sections = document.querySelectorAll('section, header');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => observer.observe(section));
+
+  window.onload = () => {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+      document.body.classList.add('loaded');
+    }, 50);
+  };
+</script>
+
+</body>
+</html>
