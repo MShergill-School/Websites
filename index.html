@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manmeet Shergill — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">MS</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#goals" class="nav-link">Goals</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#languages" class="nav-link">Languages</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <canvas id="gridCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag">[ Computer Science Student ]</div>
+      <h1 class="hero-name">
+        <span class="line">Manmeet</span>
+        <span class="line accent-text">Shergill</span>
+      </h1>
+      <p class="hero-sub">Motivated. Technical. Driven to build the future.</p>
+      <div class="hero-cta">
+        <a href="#about" class="btn-primary">Explore Portfolio</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label reveal">// about me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2>Who I Am</h2>
+          <p>I'm a motivated <strong>Grade 10</strong> student at <strong>Louise Arbour Secondary School</strong> (Class of 2028), passionate about computer science and technology. I thrive on problem-solving and am always looking to grow my technical and interpersonal skills.</p>
+          <p>Whether it's hunting bugs, tinkering with hardware, helping my community, or building websites — I bring curiosity and reliability to everything I do.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-top"><span class="stat-num" data-target="7">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Skills</span>
+            </div>
+            <div class="stat">
+              <div class="stat-top"><span class="stat-num" data-target="2">0</span></div>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <div class="stat-top"><span class="stat-num" data-target="7">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Volunteer Hrs</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-info reveal">
+          <div class="photo-placeholder">
+            <span class="photo-initials">MS</span>
+            <span class="photo-hint">Photo coming soon</span>
+          </div>
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-icon">🎓</span>
+              <div><strong>School</strong><p>Louise Arbour SS · Grade 10</p></div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📍</span>
+              <div><strong>Location</strong><p>Brampton, Ontario</p></div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">📅</span>
+              <div><strong>Graduation</strong><p>June 2028</p></div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">💡</span>
+              <div><strong>Focus</strong><p>Cybersecurity &amp; Web Dev</p></div>
+            </div>
+          </div>
+          <div class="hobbies-card">
+            <h4>Hobbies &amp; Interests</h4>
+            <div class="hobby-tags">
+              <span>💻 Hardware</span>
+              <span>🖥️ Programming</span>
+              <span>🔧 Building</span>
+              <span>🤝 Community Service</span>
+              <span>📚 Learning Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals">
+    <div class="container">
+      <div class="section-label reveal">// my goals</div>
+      <h2 class="section-title reveal">Where I'm Headed</h2>
+      <div class="goals-grid">
+        <div class="goal-card goal-short reveal">
+          <div class="goal-header">
+            <span class="goal-badge badge-short">⚡ Short-Term</span>
+            <span class="goal-timeline">Next 1–2 Years</span>
+          </div>
+          <ul class="goal-list">
+            <li>
+              <span class="goal-icon">🐛</span>
+              <div>
+                <strong>Master Bug Bounty Hunting</strong>
+                <p>Improve vulnerability research and ethical hacking skills through platforms like HackerOne and Bugcrowd.</p>
+              </div>
+            </li>
+            <li>
+              <span class="goal-icon">💻</span>
+              <div>
+                <strong>Expand Programming Knowledge</strong>
+                <p>Learn additional languages and frameworks to become a more versatile developer.</p>
+              </div>
+            </li>
+            <li>
+              <span class="goal-icon">🌐</span>
+              <div>
+                <strong>Build &amp; Launch Web Projects</strong>
+                <p>Take on real website commission projects to build a client portfolio and generate income.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="goal-card goal-long reveal">
+          <div class="goal-header">
+            <span class="goal-badge badge-long">🚀 Long-Term</span>
+            <span class="goal-timeline">Career Vision</span>
+          </div>
+          <ul class="goal-list">
+            <li>
+              <span class="goal-icon">🔐</span>
+              <div>
+                <strong>Cybersecurity Professional</strong>
+                <p>Specialize in penetration testing, ethical hacking, and protecting systems from threats.</p>
+              </div>
+            </li>
+            <li>
+              <span class="goal-icon">🎓</span>
+              <div>
+                <strong>Post-Secondary in Computer Science</strong>
+                <p>Attend a top university or college program focused on computer science or cybersecurity.</p>
+              </div>
+            </li>
+            <li>
+              <span class="goal-icon">💼</span>
+              <div>
+                <strong>Freelance Web Development</strong>
+                <p>Run a successful web development commission business, creating professional websites for clients.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label reveal">// skills &amp; abilities</div>
+      <h2 class="section-title reveal">What I Bring</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-icon">🔧</div>
+          <h3>Computer Troubleshooting</h3>
+          <p>Diagnosing and repairing computer issues at a hardware and software level.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="1">
+          <div class="skill-icon">🧠</div>
+          <h3>Problem Solving</h3>
+          <p>Critical thinking and creative approaches to tackling complex challenges.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="2">
+          <div class="skill-icon">🤝</div>
+          <h3>Teamwork</h3>
+          <p>Collaborative and communicative in group environments and projects.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="3">
+          <div class="skill-icon">✅</div>
+          <h3>Responsibility</h3>
+          <p>Reliable, punctual, and committed to following through on commitments.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="4">
+          <div class="skill-icon">💬</div>
+          <h3>Communication</h3>
+          <p>Clear and effective written and verbal communication skills.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="5">
+          <div class="skill-icon">⚡</div>
+          <h3>Tech Adaptability</h3>
+          <p>Quick to learn and apply new technologies and tools.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="6">
+          <div class="skill-icon">🗂️</div>
+          <h3>Organization</h3>
+          <p>Strong time management and structured approach to tasks.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section id="languages">
+    <div class="container">
+      <div class="section-label reveal">// coding languages</div>
+      <h2 class="section-title reveal">My Stack</h2>
+      <div class="lang-grid">
+        <div class="lang-card reveal" data-delay="0">
+          <div class="lang-logo">🐍</div>
+          <h3>Python</h3>
+          <p>Scripting, automation, and general-purpose programming.</p>
+          <div class="lang-level">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span>
+          </div>
+          <span class="lang-tag">Intermediate</span>
+        </div>
+        <div class="lang-card reveal" data-delay="1">
+          <div class="lang-logo">⚙️</div>
+          <h3>C++</h3>
+          <p>Systems programming and performance-focused development.</p>
+          <div class="lang-level">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span><span class="lang-dot"></span>
+          </div>
+          <span class="lang-tag">Learning</span>
+        </div>
+        <div class="lang-card reveal" data-delay="2">
+          <div class="lang-logo">☕</div>
+          <h3>Java</h3>
+          <p>Object-oriented programming and application development.</p>
+          <div class="lang-level">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span><span class="lang-dot"></span>
+          </div>
+          <span class="lang-tag">Learning</span>
+        </div>
+        <div class="lang-card reveal" data-delay="3">
+          <div class="lang-logo">🎮</div>
+          <h3>Luau</h3>
+          <p>Roblox scripting — game logic and interactive experiences.</p>
+          <div class="lang-level">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span>
+          </div>
+          <span class="lang-tag">Intermediate</span>
+        </div>
+        <div class="lang-card reveal" data-delay="4">
+          <div class="lang-logo">🌐</div>
+          <h3>HTML / CSS / JS</h3>
+          <p>Front-end web development and interactive websites.</p>
+          <div class="lang-level">
+            <span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot filled"></span><span class="lang-dot"></span>
+          </div>
+          <span class="lang-tag">Intermediate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label reveal">// experience</div>
+      <h2 class="section-title reveal">My Journey</h2>
+      <div class="timeline">
+
+        <div class="timeline-group reveal">
+          <div class="timeline-cat">Education</div>
+          <div class="timeline-item">
+            <div class="timeline-dot dot-blue"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Sep 2024 — Jun 2028</div>
+              <h3>Louise Arbour Secondary School</h3>
+              <p>Currently in Grade 10, pursuing my Ontario Secondary School Diploma with a focus on technology and computer science.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-group reveal">
+          <div class="timeline-cat">Extra-Curricular</div>
+          <div class="timeline-item">
+            <div class="timeline-dot dot-purple"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2026 — Present</div>
+              <h3>Technology &amp; Computer Interest Projects</h3>
+              <p>Self-directed computer science and tech projects, exploring programming, hardware, and system concepts beyond the classroom.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-group reveal">
+          <div class="timeline-cat">Volunteer</div>
+          <div class="timeline-item">
+            <div class="timeline-dot dot-green"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2026 — Present · 3 hrs</div>
+              <h3>Miri Piri Sikh Centre — Cashier Volunteer</h3>
+              <p>Volunteering as a cashier at the Gurdwara, supporting the community and developing customer service skills.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot dot-green"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2025 — Present · 4 hrs</div>
+              <h3>Family / Community Construction Work — Helper</h3>
+              <p>Assisting with construction and repair projects, applying hands-on skills and contributing to community improvements.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-label reveal">// achievements &amp; certifications</div>
+      <h2 class="section-title reveal">Milestones</h2>
+      <div class="achieve-grid">
+        <div class="achieve-card achieve-cert reveal">
+          <div class="achieve-badge">📜</div>
+          <div class="achieve-label">Certification</div>
+          <h3>WHMIS Training</h3>
+          <p>Workplace Hazardous Materials Information System certification.</p>
+          <span class="achieve-date">Sep 2025</span>
+        </div>
+        <div class="achieve-card achieve-cert reveal">
+          <div class="achieve-badge">💻</div>
+          <div class="achieve-label">Certification</div>
+          <h3>Basic Computer Knowledge &amp; Troubleshooting</h3>
+          <p>Demonstrated foundational skills in computer systems and troubleshooting methods.</p>
+          <span class="achieve-date">Jan 2026</span>
+        </div>
+        <div class="achieve-card achieve-award reveal">
+          <div class="achieve-badge">🏛️</div>
+          <div class="achieve-label">Achievement</div>
+          <h3>Community Involvement — Gurdwara</h3>
+          <p>Active involvement in community work and service at the Gurdwara.</p>
+          <span class="achieve-date">Aug 2025</span>
+        </div>
+        <div class="achieve-card achieve-award reveal">
+          <div class="achieve-badge">🔨</div>
+          <div class="achieve-label">Achievement</div>
+          <h3>Practical Tech &amp; Construction Experience</h3>
+          <p>Gaining hands-on experience in both construction and technology fields.</p>
+          <span class="achieve-date">Jan 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label reveal">// contact</div>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out!</p>
+          <div class="contact-details">
+            <a href="mailto:807912@pdsb.net" class="contact-item">
+              <span class="c-icon">✉️</span>
+              <span>807912@pdsb.net</span>
+            </a>
+            <a href="tel:6475460703" class="contact-item">
+              <span class="c-icon">📞</span>
+              <span>647-546-0703</span>
+            </a>
+            <div class="contact-item">
+              <span class="c-icon">📍</span>
+              <span>Brampton, Ontario</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="formName" placeholder="Your Name" required />
+            <label for="formName">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" placeholder="Your Email" required />
+            <label for="formEmail">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="formMsg" placeholder="Your Message" rows="4" required></textarea>
+            <label for="formMsg">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary btn-block">Send Message ↗</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">MS</div>
+      <p>© 2026 Manmeet Shergill. Built with passion.</p>
+      <p class="footer-school">Louise Arbour Secondary School · Class of 2028</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
